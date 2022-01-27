@@ -10,29 +10,47 @@ module.exports = {
   	// the output of the webpack build will be in /dist directory
     path: path.resolve(__dirname, 'dist'),
     // the filename of the JS bundle will be bundle.js
-    filename: 'bundle.js'
+    filename: 'bundle.js'//path.join(_dirname, 'dist')
   },
-   devServer: {
-   port: 3000,
+  devServer: {
+  port: 3000,
+  watchContentBase: true,
  },  // Rules of how webpack will take files, complie/bundle them for browser
   module: {
     rules: [
       {
       	// for any file with a suffix of js or jsx
-        test: /\.jsx?$/,
-        // ignore transpiling JavaScript from node_modules as it should be that state
+        test: /\.(js|jsx)$/, //test: /\.jsx?$/
+        // ignore transpiling JS from node_modules as it should be that state
         exclude: /node_modules/,
         // use the babel-loader for transpiling JavaScript to a suitable format
-        loader: 'babel-loader',
+        use: {
+          loader: 'babel-loader'
+        },
       },
       {
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader']
-    }
-    ]
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader"
+          }
+        ]
+      }, //updated
+      {
+        test: /\.css$/,
+        use: [
+        'style-loader', 'css-loader'
+        ]
+      },
+      {plugins: [
+      new HtmlWebpackPlugin({ 
+        template: path.resolve(__dirname, 'public', 'index.html')
+        //template: './src/index.html',
+        //fileName: './index.html'
+      })],// add a custom index.html as the template updated for this proj
+      },
+    ],
   },
-  // add a custom index.html as the template
-  plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'public', 'index.html') })]
 };
 
 
@@ -61,6 +79,14 @@ export const module = {
       use: {
         loader: 'babel-loader'
       }
+    },
+    {
+      test: /\.html$/,
+      use: [
+        {
+          loader: "html-loader"
+        }
+      ]
     },
     {
       test: /\.css$/,

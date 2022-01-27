@@ -190,6 +190,7 @@ c. `WebPack`
 - html-webpack-plugin _pre-gen basic html doc or make your own_
 - webpack-nano _Webpack CLI_
 - webpack-plugin-server _dev server via local_
+- npx webpack --config webpack.config.js
 
 #### Bibliography
 
