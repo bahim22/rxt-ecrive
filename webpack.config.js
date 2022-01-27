@@ -28,18 +28,33 @@ module.exports = {
 					loader: 'babel-loader',
 				},
 			},
-			/*      {
+			{
         test: /\.html$/,
         use: [
           {
             loader: "html-loader"
           }
         ]
-      }, //updated*/
+      }, //updated
 			{
 				test: /\.css$/,
 				use: ['style-loader', 'css-loader'],
 			},
+            {
+        test: /\.svg$/,
+        use: 'file-loader'
+      },
+      {
+        test: /\.png$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              mimetype: 'image/png'
+            }
+          }
+        ]
+      }
 		],
 	},
 	plugins: [

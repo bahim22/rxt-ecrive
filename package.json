@@ -10,7 +10,7 @@
 		"test:espretty": "npx eslint-config-prettier App.js",
 		"test:lint": "eslint \"src/**/*.{js,jsx}\"",
 		"test:webpack": "npx webpack --config webpack.config.js",
-    "prettier:check": "prettier --check \"src/**/*.{js,jsx}\"",
+		"prettier:check": "prettier --check \"src/**/*.{js,jsx}\"",
 		"prettier:write": "npx prettier --write \"src/**/*.{js,jsx}\"",
 		"build": "webpack --mode production",
 		"dev": "webpack serve --mode development",
@@ -60,6 +60,7 @@
 		"eslint-plugin-jsx-a11y": "^6.5.1",
 		"eslint-plugin-react": "^7.28.0",
 		"file-loader": "^6.2.0",
+    "url-loader": "^4.1.1",
 		"html-webpack-plugin": "^5.5.0",
 		"jest": "^27.4.7",
 		"postcss": "^8.4.5",
@@ -71,15 +72,15 @@
 		"webpack-dev-server": "^4.7.2"
 	},
 	"browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
 	}
+}

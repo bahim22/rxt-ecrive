@@ -30,8 +30,10 @@ const About = () => {
 				<div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
 					<img
 						className="object-cover object-center rounded"
-						alt="Hima Balde"
-						src="./public/img/hima.jpg"
+						alt="sacred geometry"
+						src="react-portfo2/public/logo512.png"
+						height={320}
+						width={320}
 					/>
 				</div>
 			</div>

@@ -10,3 +10,4 @@
 ./prettierrc
 ./vercel.json
 ./compos
+./cypress
