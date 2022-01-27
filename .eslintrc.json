@@ -22,7 +22,6 @@
     ],
     "rules": {
 			"react/react-in-jsx-scope": "off",
-            //"prettier/prettier": ["error", {}, { "usePrettierrc": "true" }],
             "no-tabs": ["off", {"allowIndentationTabs": true}]
             //"no-confusing-arrow": ["warning", { "allowParens": false }]
     },

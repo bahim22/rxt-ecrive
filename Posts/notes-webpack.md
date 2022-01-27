@@ -93,6 +93,10 @@ Dependencies added:
 - url loader
 - file loader
 
+devDep
+"file-loader": "^6.2.0", //svg
+"url-loader": "^4.1.1" //png
+
 D. `WebPack`
 
 ```bash

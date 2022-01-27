@@ -28,14 +28,14 @@ module.exports = {
 					loader: 'babel-loader',
 				},
 			},
-			{
+			/*{
         test: /\.html$/,
         use: [
           {
             loader: "html-loader"
           }
         ]
-      }, //updated
+      },*/ //updated
 			{
 				test: /\.css$/,
 				use: ['style-loader', 'css-loader'],
@@ -60,13 +60,16 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, 'public', 'index.html'),
-			//template: './src/index.html',
+			//template: './public/index.html',
 			//fileName: './index.html'
 		}),
 	], // add a custom index.html as the template updated for this proj
 }
 
 /**
+/////\\\\\\\\\\\\\\\\\\\\
+****** ISSUE WITH RESOLVING INDEX.HTML IN SRC || PUBLIC
+//POSSIBLE fix of adding the templatecontent to plugins htmlWPPlugin
 
 // Config Option 2 (needs tested)
 

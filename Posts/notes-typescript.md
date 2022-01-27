@@ -86,7 +86,3 @@ ReactDOM.render(<App name="Jane" />, mountNode);
     ]
   }
 ```
-
-devDep
-"file-loader": "^6.2.0", //svg
-"url-loader": "^4.1.1" //png
