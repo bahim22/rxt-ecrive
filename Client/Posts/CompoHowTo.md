@@ -106,7 +106,7 @@ npm install --save-dev webpack webpack-cli @babel/preset-react babel-loader @bab
 npm install react react-dom react-hot-loader bootstrap jquery popper.js tailwindcss lodash
 ```
 
-```js 
+```js
 const path = require('path');
 
 module.exports = {
@@ -130,7 +130,7 @@ module.exports = {
 ```
 
 ```html
-- <div className={style1}> 2. Hello World </div>
+<div className={style1}> 2. Hello World </div>
 ```
 
 - _or (3) with the destructuring syntax_
@@ -150,10 +150,9 @@ ___
 
 ## WEBPACK config file
 
-```bash
-npm install webpack webpack-cli webpack-dev-server --save-dev
-npm install webpack webpack-cli --save-dev
-```
+>
+  npm install webpack webpack-cli webpack-dev-server --save-dev
+  npm install webpack webpack-cli --save-dev
 
 ### Package Descriptions
 
@@ -173,6 +172,11 @@ npm install webpack webpack-cli --save-dev
 - auto-prefixer, post-css-preset-env _css-modules_ _css-loaders_
 - react-bootstrap, module.css
 
+>
+  "tailwindcss": "^3.0.7"
+  "@headlessui/react": "^1.4.3"
+  "@heroicons/react": "^1.0.5"
+
 - style-loader— Adds CSS to the DOM by injecting a < style > tag
 
 > `WebPack`
@@ -180,4 +184,4 @@ npm install webpack webpack-cli --save-dev
 - webpack _Module bundler_ to convert code into prod ready site
 - html-webpack-plugin _pre-gen basic html doc or make your own_
 - webpack-nano _Webpack CLI_
-- webpack-plugin-serve _dev server via local_
+- webpack-plugin-server _dev server via local_
