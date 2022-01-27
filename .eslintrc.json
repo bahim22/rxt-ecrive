@@ -28,6 +28,10 @@
 				"version": "detect"
 			}
 		}
+	//	"globals": {
+  //  	"Atomics": "readonly",
+  //  	"SharedArrayBuffer": "readonly"
+  //}
 }
 /*//npm init @eslint/config
 

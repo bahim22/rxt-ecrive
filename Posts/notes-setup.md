@@ -73,6 +73,29 @@ import { homeButton } from './styles.css'
 - use default imports/exports if the module has 1 component
 - use named exports w/ utility mods exporting multiple func
 
+## CSS Options: Bootstrap ||  MUI
+
+- Add below imports to App.tsx if using bootstrap (also imp styles.css to index and add custom attr.)
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+`Bootstrap` _Dep_
+"bootstrap": "^5.1.3",
+"jquery": "^3.6.0",
+"popper.js": "^1.16.1"
+
+- For MUI: import the specific compo you use then use as a jsx div (Ex.)
+
+```tsx
+import Button from '@material-ui/core/Button';
+<Button variant="contained">this is a material UI button</Button>
+```
+
+`MUI` _Dep_
+"@material-ui/core": "^4.12.3",
+"fontsource-roboto": "^4.0.0",
+"@material-ui/icons": "^4.11.2"
+
 ### Package devDep
 
 A. `Babel`
@@ -87,47 +110,20 @@ A. `Babel`
 B. `Eslint`
 package.json scripts (need to fix this test)
 "test:lint-rules": "eslint index.js --config test-config/.eslintrc.js --format json"
+// Optional: Can remove eslint if adding TypeScript and TS devDep.
 
 C. `Prettier`
-
-D. `WebPack`
-
-```bash
-npm install --save-dev webpack webpack-cli @babel/preset-react babel-loader @babel/core @babel/preset-env @hot-loader/react-dom webpack-dev-server css-loader style-loader html-webpack-plugin postcss-loader autoprefixer jest babel-jest css-loader style-loader file-loader url-loader lodash-webpack-plugin prettier
-
-npm install react react-dom react-hot-loader bootstrap jquery popper.js tailwindcss lodash
-```
-
-```bash
-  npm install webpack webpack-cli webpack-dev-server --save-dev
-  npm install webpack webpack-cli --save-dev
-```
-
-```js
-const path = require('path')
-module.exports = {
-entry: './src/app.js',
-output: {
-  path: path.join(_name, 'public'),
-  filename: 'bundle.js',
-},}
-```
-
-- webpack _Module bundler_ to convert code into prod ready site
-- //\\ html-webpack-plugin _pre-gen basic html doc or make your own_
-- //\\ webpack-nano _Webpack CLI_
-- webpack-plugin-server _dev server via local_
-- npx webpack --config webpack.config.js
-- "clean": "rm dist/bundle.js",
 
 ## Testing
 
 1. `Jest`
-   1. "test": "jest",
+   1. "test": "jest"
+      1. npm test //run unit tests
 2. `Cypress`
-   1. "cypress:open": "cypress open
+   1. "cypress:open": "cypress open"
+      1. npm cypress:open
 
-> devDep
+> _devDep_
 "jest": "^27.4.7",
 "babel-jest": "^27.4.6",
-"cypress": "^9.3.1"
+"cypress": "^9.3.1
