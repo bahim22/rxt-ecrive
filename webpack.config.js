@@ -1,34 +1,34 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  // the output bundle won't be optimized for production but suitable for development
-  mode: 'development',
-  // the app entry point is /src/index.js
-  entry: path.resolve(__dirname, 'src', 'index.js'),
-  output: {
-  	// the output of the webpack build will be in /dist directory
-    path: path.resolve(__dirname, 'dist'),
-    // the filename of the JS bundle will be bundle.js
-    filename: 'bundle.js'//path.join(_dirname, 'dist')
-  },
-  devServer: {
-  port: 3000,
-  //watchContentBase: true,
- },  // Rules of how webpack will take files, complie/bundle them for browser
-  module: {
-    rules: [
-      {
-      	// for any file with a suffix of js or jsx
-        test: /\.(js|jsx)$/, //test: /\.jsx?$/
-        // ignore transpiling JS from node_modules as it should be that state
-        exclude: /node_modules/,
-        // use the babel-loader for transpiling JavaScript to a suitable format
-        use: {
-          loader: 'babel-loader'
-        },
-      },
-/*      {
+	// the output bundle won't be optimized for production but suitable for development
+	mode: 'development',
+	// the app entry point is /src/index.js
+	entry: path.resolve(__dirname, 'src', 'index.js'),
+	output: {
+		// the output of the webpack build will be in /dist directory
+		path: path.resolve(__dirname, 'dist'),
+		// the filename of the JS bundle will be bundle.js
+		filename: 'bundle.js', //path.join(_dirname, 'dist')
+	},
+	devServer: {
+		port: 3000,
+		//watchContentBase: true,
+	}, // Rules of how webpack will take files, complie/bundle them for browser
+	module: {
+		rules: [
+			{
+				// for any file with a suffix of js or jsx
+				test: /\.(js|jsx)$/, //test: /\.jsx?$/
+				// ignore transpiling JS from node_modules as it should be that state
+				exclude: /node_modules/,
+				// use the babel-loader for transpiling JavaScript to a suitable format
+				use: {
+					loader: 'babel-loader',
+				},
+			},
+			/*      {
         test: /\.html$/,
         use: [
           {
@@ -36,21 +36,20 @@ module.exports = {
           }
         ]
       }, //updated*/
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      },
-    ],
-  },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'public', 'index.html')
-        //template: './src/index.html',
-        //fileName: './index.html'
-      })],// add a custom index.html as the template updated for this proj
-};
-
-
+			{
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader'],
+			},
+		],
+	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, 'public', 'index.html'),
+			//template: './src/index.html',
+			//fileName: './index.html'
+		}),
+	], // add a custom index.html as the template updated for this proj
+}
 
 /**
 

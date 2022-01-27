@@ -1,15 +1,13 @@
 {
-    "extends": [
-        "react-app", "prettier"
-    ],
-    "rules": {
-        "react/react-in-jsx-scope": "off",
-        "jsx-a11y/anchor-is-valid": "off",
-        "import/no-webpack-loader-syntax": "off",
-        "default-case": "off",
-        "prettier/prettier": "error",
-        "arrow-body-style": "off",
-        "prefer-arrow-callback": "off"
-        },
-    "plugins": ["react"]
+	"extends": ["prettier"],
+	"rules": {
+		"react/react-in-jsx-scope": "off",
+		"jsx-a11y/anchor-is-valid": "off"
+		//"import/no-webpack-loader-syntax": "off",
+		//"default-case": "off"
+		//"prettier/prettier": "error",
+		//"arrow-body-style": "off",
+		//"prefer-arrow-callback": "off"
+	},
+	"plugins": ["react"]
 }

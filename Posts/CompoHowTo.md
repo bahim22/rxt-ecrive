@@ -1,7 +1,7 @@
-
 # Documentation for creating Components
 
 ---
+
 title: 'Component Information'
 
 author: 'Hima 'Dionysus' Balde'
@@ -82,20 +82,21 @@ package.json
 **npm install** -tailwindcss@latest- -@tailwindcss/typography- -postcss@latest- -autoprefixer@latest-
 npm install tailwindcss@latest @tailwindcss/typography postcss@latest autoprefixer@latest
 **npx tailwindcss init -p**
+```
 //add this to tailwind.config.js
 plugins: [
 require('@tailwindcss/typography')
 ]
-```
 
 postcss.config.js
 
 ```js
 module.exports = {
 plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-}}
+  tailwindcss: {},
+  autoprefixer: {},
+},
+}
 ```
 
 `add` in to the styles/globals.css
@@ -117,13 +118,14 @@ npm install react react-dom react-hot-loader bootstrap jquery popper.js tailwind
 ```
 
 ```js
-const path = require('path');
+const path = require('path')
 module.exports = {
-  entry: './src/app.js',
-  output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
-  }}
+entry: './src/app.js',
+output: {
+  path: path.join(__dirname, 'public'),
+  filename: 'bundle.js',
+},
+}
 ```
 
 ## CSS DESIGN
@@ -134,11 +136,11 @@ module.exports = {
 2. _import { style1, style2 } from './styles.css'_
 
 ```html
-<div className={Style.style1}> 1. Hello World</div>
+<div className="{Style.style1}">1. Hello World</div>
 ```
 
 ```html
-<div className={style1}> 2. Hello World </div>
+<div className="{style1}">2. Hello World</div>
 ```
 
 - _or (3) with the destructuring syntax_
@@ -167,7 +169,7 @@ import { homeButton } from './styles.css'
 
 a. `Babel`
 
-- @babel/core  _main dep for Babel_ --transpiler--
+- @babel/core _main dep for Babel_ --transpiler--
 - @babel/preset-env lets you code es'15-'17 & Babel auto detect/transpile
 - @babel/preset-react (ID that it's a react app to convert jsx to JS)
 - @babel/plugin-proposal-class-properties (Use class properties)
