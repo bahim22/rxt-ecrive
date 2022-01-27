@@ -83,6 +83,7 @@ package.json
 npm install tailwindcss@latest @tailwindcss/typography postcss@latest autoprefixer@latest
 **npx tailwindcss init -p**
 ```
+
 //add this to tailwind.config.js
 plugins: [
 require('@tailwindcss/typography')
@@ -174,6 +175,11 @@ a. `Babel`
 - @babel/preset-react (ID that it's a react app to convert jsx to JS)
 - @babel/plugin-proposal-class-properties (Use class properties)
 - @babel/plugin-syntax-dynamic-import, _dynamic import/exports_
+
+`Eslint`
+package.json scripts (need to fix this test)
+"test:lint-rules": "eslint index.js --config test-config/.eslintrc.js --format json",
+`Prettier`
 
 b. `CSS`
 

@@ -12,9 +12,10 @@
 	"description": "React portfolio for personal coding projects",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint:pretest": "eslint \"src/**/*.{js,jsx}\"",
+		"lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
 		"test:lint": "eslint . && prettier --check .",
-		"test:lint-rules": "eslint index.js --config test-config/.eslintrc.js --format json",
-		"test:deprecated": "eslint-find-rules --deprecated index.js",
+		"test:webpack": "npx webpack --config webpack.config.js",
 		"prettier": "npx prettier --write .",
 		"build": "webpack --mode production",
 		"start": "webpack serve --mode development"
@@ -24,7 +25,12 @@
 		"url": "git+https://github.com/bahim22/react-portfo2.git"
 	},
 	"keywords": [
-		"React, Webpack, Babel, PostCSS, boilerplate, development"
+		"React",
+		"Webpack",
+		"Babel",
+		"PostCSS",
+		"boilerplate",
+		"development"
 	],
 	"author": "Hima Balde (Dionysus Era Dev)",
 	"bugs": {
@@ -35,11 +41,15 @@
 		"@babel/core": "^7.15.0",
 		"@babel/preset-env": "^7.15.0",
 		"@babel/preset-react": "^7.14.5",
+		"@headlessui/react": "^1.4.3",
+		"@heroicons/react": "^1.0.5",
 		"@tailwindcss/typography": "^0.5.0",
 		"autoprefixer": "^10.4.2",
 		"babel-loader": "^8.2.3",
 		"css-loader": "^6.5.1",
 		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.25.4",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
 		"eslint-plugin-react": "^7.28.0",
 		"file-loader": "^6.2.0",
 		"html-webpack-plugin": "^5.5.0",

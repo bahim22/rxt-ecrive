@@ -1,6 +1,7 @@
 ./postcss.config.js
 ./tailwind.config.js
 ./build
+./dist
 ./node_modules
 ./public
 ./tw.js
@@ -8,3 +9,4 @@
 ./babelrc
 ./prettierrc
 ./vercel.json
+./compos

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
 	// the output bundle won't be optimized for production but suitable for development
-	mode: 'development',
+	mode: 'production',
 	// the app entry point is /src/index.js
 	entry: path.resolve(__dirname, 'src', 'index.js'),
 	output: {
@@ -58,16 +58,18 @@ module.exports = {
 import { join } from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
+// Where files should be sent once they are bundled
 export const entry = './src/index.js'
 export const output = {
   path: join(__dirname, '/public'),
   filename: 'bundle.js'
-}
+}// webpack 5 comes with devServer which loads in development mode
 export const devServer = {
   port: 3000,
   watchContentBase: true
 }
 export const module = {
+   // Rules of how webpack will take our files, complie & bundle them for the browser
   rules: [
     {
       test: /\.(js|jsx)$/,
@@ -91,41 +93,4 @@ export const module = {
   ]
 }
 export const plugins = [new HtmlWebpackPlugin({ template: './src/index.html' })]
-
-//Config option 3(edits needed)
-
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-
-module.exports = {
-  // Where files should be sent once they are bundled
-  entry: './src/index.js',
-  output: {
-   path: path.join(__dirname, '/public'),
-   filename: 'bundle.js'
- },
-  // webpack 5 comes with devServer which loads in development mode
- devServer: {
-   port: 5522,
-   watchContentBase: true
- },
-  // Rules of how webpack will take our files, complie & bundle them for the browser
- module: {
-   rules: [
-     {
-       test: /\.(js|jsx)$/,
-       exclude: /nodeModules/,
-       use: {
-         loader: 'babel-loader'
-       }
-     },
-     {
-       test: /\.css$/,
-       use: ['style-loader', 'css-loader']
-     }
-   ]
- },
- plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
-};
-
 */
