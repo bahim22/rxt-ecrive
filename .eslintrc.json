@@ -5,10 +5,11 @@
         "node": true
     },
     "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-				"prettier"
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "prettier"
     ],
+    "root": true,
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -20,7 +21,10 @@
         "react"
     ],
     "rules": {
-			"react/react-in-jsx-scope": "off"
+			"react/react-in-jsx-scope": "off",
+            //"prettier/prettier": ["error", {}, { "usePrettierrc": "true" }],
+            "no-tabs": ["off", {"allowIndentationTabs": true}]
+            //"no-confusing-arrow": ["warning", { "allowParens": false }]
     },
 		"ignorePatterns": ["node_modules/"],
 		"settings": {
@@ -33,21 +37,4 @@
   //  	"SharedArrayBuffer": "readonly"
   //}
 }
-/*//npm init @eslint/config
-
-"extends": [
-		"eslint:recommended",
-		//"plugin:import/errors",
-		"plugin:react/recommended",
-		//"plugin:jsx-a11y/recommended",
-		"prettier"
-	],
-	"rules": {
-		"react/react-in-jsx-scope": "off",
-		"jsx-a11y/anchor-is-valid": "off",
-		"import/no-webpack-loader-syntax": "off"
-		//"default-case": "off"
-	},
-	"plugins": ["react", "import", "jsx-a11y"],
-	//"ignorePatterns": ["node_modules/"],
-	}*/
+//npm init @eslint/config
