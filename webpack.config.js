@@ -14,7 +14,7 @@ module.exports = {
   },
   devServer: {
   port: 3000,
-  watchContentBase: true,
+  //watchContentBase: true,
  },  // Rules of how webpack will take files, complie/bundle them for browser
   module: {
     rules: [
@@ -28,29 +28,26 @@ module.exports = {
           loader: 'babel-loader'
         },
       },
-      {
+/*      {
         test: /\.html$/,
         use: [
           {
             loader: "html-loader"
           }
         ]
-      }, //updated
+      }, //updated*/
       {
         test: /\.css$/,
-        use: [
-        'style-loader', 'css-loader'
-        ]
+        use: ['style-loader', 'css-loader']
       },
-      {plugins: [
-      new HtmlWebpackPlugin({ 
+    ],
+  },
+    plugins: [
+      new HtmlWebpackPlugin({
         template: path.resolve(__dirname, 'public', 'index.html')
         //template: './src/index.html',
         //fileName: './index.html'
       })],// add a custom index.html as the template updated for this proj
-      },
-    ],
-  },
 };
 
 
