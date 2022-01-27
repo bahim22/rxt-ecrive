@@ -86,3 +86,27 @@ ReactDOM.render(<App name="Jane" />, mountNode);
     ]
   }
 ```
+
+```json //.prettierrc config options removed
+"overrides": [
+{
+  "files": ["*.json"],
+  "options": {
+    "parser": "json"
+  }
+},
+{
+  "files": ["*.ts"],
+  "options": {
+      "parser": "typescript"
+  }
+},
+{
+  "files": ["*.tsx"],
+  "options": {
+      "parser": "typescript",
+      "jsxBracketSameLine": true,
+      "jsxSingleQuote": true
+    }
+}
+```
