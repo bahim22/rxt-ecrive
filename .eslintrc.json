@@ -1,5 +1,37 @@
 {
-	"extends": [
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+				"prettier"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+			"react/react-in-jsx-scope": "off"
+    },
+		"ignorePatterns": ["node_modules/"],
+		"settings": {
+			"react": {
+				"version": "detect"
+			}
+		}
+}
+/*//npm init @eslint/config
+
+"extends": [
 		"eslint:recommended",
 		//"plugin:import/errors",
 		"plugin:react/recommended",
@@ -13,22 +45,5 @@
 		//"default-case": "off"
 	},
 	"plugins": ["react", "import", "jsx-a11y"],
-	"ignorePatterns": ["node_modules/"],
-	"parserOptions": {
-		"ecmaVersion": 2021,
-		"sourceType": "module",
-		"ecmaFeatures": {
-			"jsx": true
-		}
-	},
-	"env": {
-		"es6": true,
-		"browser": true,
-		"node": true
-	},
-	"settings": {
-		"react": {
-			"version": "detect"
-		}
-	}
-}
+	//"ignorePatterns": ["node_modules/"],
+	}*/
