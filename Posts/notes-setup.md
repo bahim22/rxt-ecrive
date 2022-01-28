@@ -127,3 +127,6 @@ C. `Prettier`
 "jest": "^27.4.7",
 "babel-jest": "^27.4.6",
 "cypress": "^9.3.1
+
+//setup
+_redirects in public dir for deploying to vercel/netlify
