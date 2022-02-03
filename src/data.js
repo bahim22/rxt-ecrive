@@ -1,9 +1,10 @@
+
 export const projects = [
 	{
 		title: 'Next.js Blog',
 		subtitle: 'DioBlog',
 		description: 'd',
-		image: 'd',
+		image: 'img/bbman.png',
 		link: 'd',
 	},
 	{
