@@ -14,10 +14,12 @@ node_modules
 /out/
 public/sitemap.xml
 .vercel
-
+Posts/
+/Posts
 # production
 /build
 *.xml
+/dist
 # rss feed
 /public/feed.xml
 # misc
@@ -54,3 +56,4 @@ node_modules/
 ehthumbs.db
 Thumbs.db
 *.code-workspace
+Posts/compos/

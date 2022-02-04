@@ -10,9 +10,9 @@ const ButtonGroup = ({ children }) => {
 				{children}
 			</Button>
 			<button onClick={() => setIsShowing((isShowing) => !isShowing)}>Toggle</button>
-			{/* <Transition show={true}>
+			<Transition show={true}>
             I will appear and disappear.
-        </Transition> */}
+        </Transition>
 		</div>
 	)
 }

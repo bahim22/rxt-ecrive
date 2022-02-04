@@ -1,12 +1,13 @@
 import { HomeIcon } from "@heroicons/react/solid"
+import propTypes from "prop-types"
 import { any } from "prop-types"
 //import { useHref } from "react-router-dom"
 import { useState } from "react"
 
 const Layout = ({ header, children, footer, title, ...props  }) => {
-    
-    // function useDescriptions(): [string, (props: DescriptionProviderProps) => JSX.Element]
-    const [contact, setContact] = useState([])
+
+    const [isShowing, setIsShowing] = useState(false)
+    const [contact, setContact] = useState('')
 	return (
 		<section id="about">
 			<div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
@@ -17,7 +18,7 @@ const Layout = ({ header, children, footer, title, ...props  }) => {
 						<br className="hidden lg:inline-block" /> Dev Portfolio
 					</h1>
 					<p className="mb-8 leading-relaxed">
-						Website developer and designer. Currently building websites web Apps using JAMstack and Fullstack tools. Developing from concept to production with a one man team.
+						Website developer and designer. Currently building Websites Web Apps using JAMstack and Fullstack tools. Developing projects from concepts to production with a one man team.
 					</p>
 					<div className="flex justify-center">
 						<a
@@ -27,14 +28,19 @@ const Layout = ({ header, children, footer, title, ...props  }) => {
 						</a>
                         <button 
                             className='dark mix-blend-darken active:from-sky-600'
-                            onClick={() => open}>
-                            {contact.email} {props.HomeIcon}
+                            onClick={() => open('https://github.com/bahim22.com')}>
+                            { children }
                         </button> 
 						<a
 							href="#projects"
 							className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
 							Current Projects on GitHub and Azure DevOps
 						</a>
+						<button 
+                            className='dark mix-blend-darken active:from-sky-600'
+                            onClick={() => setIsShowing((isShowing) => !isShowing)}>Links to Projects
+                            {contact} {props.HomeIcon}
+                        </button> 
 					</div>
 				</div>
 				<div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
