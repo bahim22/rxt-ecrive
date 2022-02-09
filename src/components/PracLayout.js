@@ -10,7 +10,7 @@ const Layout = ({ header, children, footer, title, ...props  }) => {
 		title: 'web developer',
 		email: 'ibalde@isitymarket.onmicrosoft.com',
 		img: {
-			src:'./public/img/hima.png',
+			src:'/public/img/hima.png',
 			height:200,
 			width:200,
 			alt:''
