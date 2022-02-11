@@ -89,28 +89,24 @@ export const futureProjects = [
 
 export const softwares = [
 	{
-		website: 'Azure',
-		Use: 'Saas',
-		Tools: 'Dev',
-		Work: 'deploy, learn',
+		name: 'Azure',
+		tools: 'Dev, Saas',
+		image: 'public/purp9.pngd',
 	},
 	{
-		website: 'GitHub',
-		Use: 'Version Control',
-		Tools: 'Dev',
-		Work: 'hosting, collab',
+		name: 'GitHub',
+		tools: 'Dev, hosting, collab, Version Control',
+		image: 'public/purp9.pngd',
 	},
 	{
-		website: 'Jira',
-		Use: 'Kanban Board',
-		Tools: 'Dev',
-		Work: 'Planning, workflow',
+		name: 'Jira',
+		tools: 'Dev, Planning, workflow, Kanban Board',
+		image: 'public/purp9.pngd',
 	},
 	{
-		website: 'Office 365',
-		Use: 'dev',
-		Tools: 'office, excel, powerpoint',
-		Work: 'Planning, admin',
+		name: 'Office 365',
+		tools: 'office, excel, powerpoint, Planning, Admin',
+		image: 'public/purp9.pngd',
 	},
 ]
 

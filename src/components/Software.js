@@ -16,17 +16,18 @@ const SoftwarePg = () => {
               <div className='h-full bg-gray-800 bg-opacity-40 p-8 rounded'>
                 <TerminalIcon className='block w-8 text-gray-500 mb-4' />
                 <p className='leading-relaxed mb-6'>
-                    {software.website}
+                    {software.tools}
                 </p>
                 <div className='inline-flex items-center'>
                   <img 
-                    src='' 
+                    src={software.image}
                     alt='software'
                     className='w-12 rounded-full flex-shrink-0 object-cover object-center' 
                     />
-                  <span className=''>
-                    <span className=''></span>
-                    <span className=''></span>
+                  <span className='flex-grow flex flex-col pl-4'>
+                    <span className='text-gray-500 text-sm uppercase'>
+                      {software.name}
+                    </span>
                   </span>
                 </div>
               </div>
