@@ -3,84 +3,91 @@ export const projects = [
 	{
 		title: 'Next.js Blog',
 		subtitle: 'DioBlog',
-		description: 'd',
-		image: 'img/bbman.png',
-		link: 'd',
+		description: 'React based JS website with custom styling and tool config.',
+		image: './img/bbman.png',
+		link: 'https://github.com/bahim22/react-portfo2',
 	},
 	{
 		title: 'Next.js Boilerplate',
 		subtitle: 'Next-ded-boiler',
-		description: 'd',
-		image: 'd',
-		link: 'd',
+		description: 'React based JS website with custom styling and tool config.',
+		image: './public/purp9.pngd',
+		link: 'https://github.com/bahim22/react-portfo2',
 	},
 	{
 		title: 'Next.js TailwindCss App',
 		subtitle: 'next-tail-22',
-		description: 'd',
-		image: 'd',
-		link: 'd',
+		description: 'React based JS website with custom styling and tool config.',
+		image: 'public/purp9.pngd',
+		link: 'https://github.com/bahim22/react-portfo2',
 	},
 	{
 		title: 'React.js Boilerplate',
 		subtitle: 'react-ded-boiler',
-		description: 'd',
-		image: 'd',
-		link: 'd',
+		description: 'React based JS website with custom styling and tool config.',
+		image: 'public/purp9.pngd',
+		link: 'https://github.com/bahim22/react-portfo2',
 	},
 	{
 		title: 'React.js Azure Authorization',
 		subtitle: 'auth-react-azure',
-		description: 'd',
-		image: 'd',
-		link: 'd',
+		description: 'React based JS website with custom styling and tool config.',
+		image: 'public/purp9.pngd',
+		link: 'https://github.com/bahim22/react-portfo2',
 	},
 	{
 		title: 'Mern Stack Todo App',
 		subtitle: 'react-todo',
-		description: 'd',
-		image: 'd',
-		link: 'd',
+		description: 'React based JS website with custom styling and tool config.',
+		image: 'public/purp9.pngd',
+		link: 'https://github.com/bahim22/react-portfo2',
 	},
 	{
 		title: 'Mern Stack template',
 		subtitle: 'ded-az',
-		description: 'd',
-		image: 'd',
-		link: 'd',
+		description: 'React based JS website with custom styling and tool config.',
+		image: 'public/purp9.pngd',
+		link: 'https://github.com/bahim22/react-portfo2',
 	},
 	{
 		title: 'Mern FullStack Dashboard',
 		subtitle: 'menan-ded',
-		description: 'd',
-		image: 'd',
-		link: 'd',
+		description: 'React based JS website with custom styling and tool config.',
+		image: 'public/purp9.pngd',
+		link: 'https://github.com/bahim22/react-portfo2',
 	},
 	{
 		title: 'ISM Company Site',
 		subtitle: 'ism',
-		description: 'd',
-		image: 'd',
-		link: 'd',
+		description: 'React based JS website with custom styling and tool config.',
+		image: 'public/purp9.pngd',
+		link: 'https://github.com/bahim22/ism',
 	},
 	{
 		title: 'Html, Css, JS Portfolio',
 		subtitle: 'dioportfo',
-		description: 'd',
-		image: 'd',
-		link: 'd',
-	},
+		description: 'React based JS website with custom styling and tool config.',
+		image: 'public/purp9.pngd',
+		link: 'https://github.com/bahim22/dioportfo',
+	}
 ]
 
 export const futureProjects = [
 	{
-		Fullstack: 'Mern nonprofit org App',
-		AzureCosmosDB: 'Mern Workout Scheduler',
-		Next: 'Progressive Web App',
+		title: 'Marketing and Comms for NPOs',
+		Info: 'Fullstack Mern Web App',
+	},
+	{
+		title: 'Mern Workout Scheduler',
+		Info: 'AzureCosmosDB',
+	},
+	{
+		title: 'Next.js Business Analytics',
+		Info: 'Progressive Web App',
 	},
 ]
 
-export const software = [
+export const softwares = [
 	{
 		website: 'Azure',
 		Use: 'Saas',
@@ -107,7 +114,9 @@ export const software = [
 	},
 ]
 
-export const skills = ['JavaScript', 'TypeScript', 'JSX', 'JSON', 'HTML', 'CSS']
+export const skills = [
+	'JavaScript', 'TypeScript', 'JSX', 'JSON', 'HTML', 'CSS'
+]
 
 //1. Edit: skills into object containing arrays for langauges, tools, frameworks, libs
 //2. Edit: software: adjust keys and add better value pairs

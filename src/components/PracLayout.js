@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { HomeIcon } from "@heroicons/react/solid"
 import propTypes from "prop-types"
 import { any } from "prop-types"
@@ -67,3 +69,32 @@ const Layout = ({ header, children, footer, title, ...props  }) => {
 	)
 }
 
+const Sample = () => {
+	return (
+	  <section id='sample'>
+		<div className=''>
+		  <DataSample className=''/>
+		  <h1 className=''>
+			  Practice Layout
+		  </h1>
+		  <div className=''>
+			{dataSample.map((dataSample) => (
+			  <div className=''>
+				<div className=''>
+				  <DataSample className='' />
+				  <p className=''></p>
+				  <div className=''>
+					<img src='' alt='' sizes='' />
+					<span className=''>
+					  <span className=''></span>
+					  <span className=''></span>
+					</span>
+				  </div>
+				</div>
+			  </div>
+			))}
+		  </div>
+		</div>
+	  </section>
+	)
+  }
