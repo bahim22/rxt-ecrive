@@ -44,11 +44,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<form action="">
-
-			</form>
 		</div>
-
 	</section>
 	)
 }
