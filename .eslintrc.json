@@ -21,7 +21,7 @@
     ],
     "rules": {
 			"react/react-in-jsx-scope": "off",
-      "import/no-anonymous-default-export": "off",
+      "import/no-anonymous-default-export": "off"
       //"no-tabs": ["off", {"allowIndentationTabs": true}]
       //"no-confusing-arrow": ["warning", { "allowParens": false }]
     },
@@ -31,9 +31,9 @@
 				"version": "detect"
 			}
 		}
+}
+//npm init @eslint/config
 	//	"globals": {
   //  	"Atomics": "readonly",
   //  	"SharedArrayBuffer": "readonly"
   //}
-}
-//npm init @eslint/config
