@@ -24,14 +24,14 @@ export const projects = [
     title: 'React.js Boilerplate',
     subtitle: 'react-ded-boiler',
     description: 'React based JS website with custom styling and tool config.',
-    image: '/purp9.png',
+    image: './purp9.png',
     link: 'https://github.com/bahim22/react-portfo2',
   },
   {
     title: 'React.js Azure Authorization',
     subtitle: 'auth-react-azure',
     description: 'React based JS website with custom styling and tool config.',
-    image: '/purp9.png',
+    image: './purp9.png',
     link: 'https://github.com/bahim22/react-portfo2',
   },
 /*   {
@@ -45,7 +45,7 @@ export const projects = [
     title: 'Mern Stack App',
     subtitle: 'gullo-db',
     description: 'React based JS website with custom styling and tool config.',
-    image: 'public/purp9.png',
+    image: './purp9.png',
     link: 'https://github.com/bahim22/react-portfo2',
   },
 /*   {
@@ -90,22 +90,22 @@ export const softwares = [
   {
     name: 'Azure',
     tools: 'Dev, Saas',
-    image: '/purp9.pngd',
+    image: '/purp9.png',
   },
   {
     name: 'GitHub',
     tools: 'Dev, hosting, collab, Version Control',
-    image: '/purp9.pngd',
+    image: '/purp9.png',
   },
   {
     name: 'Jira',
     tools: 'Dev, Planning, workflow, Kanban Board',
-    image: '/purp9.pngd',
+    image: '/purp9.png',
   },
   {
     name: 'Office 365',
     tools: 'office, excel, powerpoint, Planning, Admin',
-    image: '/purp9.pngd',
+    image: '/purp9.png',
   },
 ]
 

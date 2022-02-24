@@ -8,7 +8,7 @@ const About = () => {
           <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-white'>
             {' '}
             Welcome to HimaLand
-            <br className='hidden lg:inline-block' /> Dev Portfolio
+            <br className='hidden md:inline-block' /> Dev Portfolio
           </h1>
           <p className='mb-8 leading-relaxed'>
             Website developer and designer. Currently building websites web Apps using JAMstack and Fullstack tools.
@@ -32,8 +32,6 @@ const About = () => {
             className='object-cover object-center rounded'
             alt='hima balde'
             src='/hima.jpg'
-            height={220}
-            width={220}
           />
         </div>
       </div>

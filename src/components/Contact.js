@@ -22,7 +22,6 @@ const Contact = () => {
             <div className='lg:w-1/2 px-6'>
               <h2 className='title-font font-semibold text-blue-500 tracking-widest text-xs'>Address</h2>
               <p className='mt-1'>
-                500 fifth ave. <br />
                 Pittsburgh, PA 15219
               </p>
             </div>
