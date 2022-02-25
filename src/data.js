@@ -97,7 +97,7 @@ export const softwares = [
     tools: 'Dev, hosting, collab, Version Control',
     image: '/purp9.png',
   },
-  {
+/*   {
     name: 'Jira',
     tools: 'Dev, Planning, workflow, Kanban Board',
     image: '/purp9.png',
@@ -106,11 +106,11 @@ export const softwares = [
     name: 'Office 365',
     tools: 'office, excel, powerpoint, Planning, Admin',
     image: '/purp9.png',
-  },
+  }, */
 ]
 
 export const skills = [
-  'JavaScript', 'TypeScript', 'JSX', 'JSON', 'HTML', 'CSS'
+  'JavaScript', 'TypeScript'
 ]
 
 //1. Edit: skills into object containing arrays for langauges, tools, frameworks, libs

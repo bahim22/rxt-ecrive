@@ -1,7 +1,9 @@
 import React from 'react'
 
-const email = 'ibalde@isitymarket.onmicrosoft.com'
-const cellPhone = '412-495-0760'
+const info = {
+  email: 'ibalde@isitymarket.onmicrosoft.com',
+  cellPhone: '412-495-0760'
+}
 
 const Contact = () => {
   return (
@@ -14,7 +16,7 @@ const Contact = () => {
             title='map'
             className='absolute inset-0'
             frameBorder={2}
-            marginHeight={0}
+            marginHeight={2}
             style={{ filter: 'opacity(0.7)' }}
             src='https://www.google.com/maps/embed/v1/place?q=dionysus+era&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8'
           />
@@ -27,9 +29,9 @@ const Contact = () => {
             </div>
             <div className='lg:w-1/2 px-6 lg:mt-0'>
               <h2 className='title-font font-semibold text-white tracking-widest text-xs'>Email</h2>
-              <a className='text-slate-500 leading-relaxed'>{email}</a>
+              <a className='text-slate-500 leading-relaxed'>{info.email}</a>
               <h2 className='title-font font-semibold text-white tracking-widest text-xs'>Phone Number</h2>
-              <p className='leading-snug'>{cellPhone}</p>
+              <p className='leading-snug'>{info.cellPhone}</p>
             </div>
           </div>
         </div>
