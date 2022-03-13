@@ -42,13 +42,11 @@ ___
   - added content values, postcss and autoprefixer
   - adjusted postcss config
 
-## Dir Structure
+## Adjusted App Layout and Design
 
-## App Layout and Design
+## Custom, Updated Toolchain
 
-## Custom Toolchain
-
-## Test and Debug
+## Added Testing and Debug
 
 - `VS Code` task dir/file for debugging
 - `Jest` dep and config
@@ -69,12 +67,10 @@ ___
 
 `**Resources & Citation**`
 
-> Links
-
 - [tailwindcss](https://tailwindcss.com/)
 - [webpack](https://webpack.js.org/configuration/other-options/)
-- [freecodecamp]<https://www.freecodecamp.org/news/build-portfolio-website-react/>
-- [react-ded-boiler]<https://www.github.com/bahim22/react-ded-boiler>
+- [freecodecamp](https://freecodecamp.org/news/build-portfolio-website-react/)
+- [react-ded-boiler](https://github.com/bahim22/react-ded-boiler/)
 - [createapp.dev](https://createapp.dev/)
 
 ### `Current GitHub Repos`
@@ -83,12 +79,13 @@ ___
 | ------------------- | -------------------------- | ------------- | ------------- |
 | _DioPortfo v2_     | Personal Portfolio   | Final v 2     | [x] done |
 | _Inner Sity Market_ | Marketing/Business  | Final v 2     | [x] done |
-| _DioBlog_           |  Next.js Blog       | Dev v1.2      | [ ] done |
-| _Next-Tail_         |  Next.js Base App   | Dev v2.1      | [ ] dev  |
-| `react-portfo2`     | Portfolio SPA       | Final v 3     | [ ] dev  |
-| `Mern Gym Tracker` | Todo/Scheduler PWA   | Build v 2     | [ ] dev 📋 |
-| `Mern  Dashboard`  |  workflow/analytics  | Build v 1     | [ ] dev 📋 |
-| `Mern ISM-DED Npo` | non-profit org Base  | Build: v1     | [ ] dev 📋 |
+| _DioBlog_           |  Next.js Blog       | Dev v1.2      | [x] done |
+| _Next-Tail_         |  Next.js Base App   | Dev v2.1      | [ ] updates  |
+| `react-portfo2`     | Portfolio SPA       | Final v 3     | [ ] updates  |
+| `MERN Stack` | MongoDb/React   | Build v 2     | [ ] dev 📋 |
+| `MERN Stack` | Next/Apollo  | Build: v1     | [ ] dev 📋 |
+| `Prisma MongoDb`  |  GraphQl/React  | Build v 1     | [ ] dev 📋 |
+| `Prisma Postgres`  |  GraphQl/Next  | Build v 1     | [ ] dev 📋 |
 
 ___
 
