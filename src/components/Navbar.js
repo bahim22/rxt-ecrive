@@ -15,7 +15,7 @@ const Navbar = () => {
 				<br />
 				<a href='#projects' className='py-2 px-6 flex hover:text-black'>
 					{' '}
-					Current Projects
+					Projects
 				</a>{' '}
 				{''}
 				<a href='#skills' className='py-2 px-6 flex hover:text-black'>

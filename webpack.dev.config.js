@@ -59,9 +59,9 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: path.resolve(__dirname, 'public', 'index.html'),
-			//template: './public/index.html',
-			//fileName: './index.html'
+			// template: path.resolve(__dirname, 'public', 'index.html'),
+			template: './public/index.html',
+			fileName: './index.html'
 		}),
 	], // add a custom index.html as the template updated for this proj
 }
