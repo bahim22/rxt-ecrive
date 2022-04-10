@@ -35,11 +35,6 @@ const config = {
         ]
       },
       {
-        test: /\.ts(x)?$/,
-        loader: 'ts-loader',
-        exclude: /node_modules/
-      },
-      {
         test: /\.svg$/,
         use: 'file-loader'
       },
@@ -61,8 +56,8 @@ const config = {
       templateContent: ({ htmlWebpackPlugin }) => '<!DOCTYPE html><html><head><meta charset="utf-8"><title>' + htmlWebpackPlugin.options.title + '</title></head><body><div id="app"></div></body></html>',
       filename: 'index.html',
     }),
-    new MiniCssExtractPlugin(),
-    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin(),'...',
+    new CleanWebpackPlugin(), '...',
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
       openAnalyzer: false,
@@ -70,8 +65,7 @@ const config = {
   ],
   resolve: {
     extensions: [
-      '.tsx',
-      '.ts',
+      '.jsx',
       '.js'
     ]
   }

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
 	// the output bundle mode: prod or dev; changed via scripts in pack.json
-	mode: 'production',
+	mode: 'development',
 	// the app entry point is /src/index.js
 	entry: path.resolve(__dirname, 'src', 'index.js'),
 	output: {
