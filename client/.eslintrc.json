@@ -5,23 +5,23 @@
         "node": true
     },
     "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "prettier"
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier"
     ],
     "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      },
-      "ecmaVersion": "latest",
-      "sourceType": "module"
+    "ecmaFeatures": {
+        "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
     },
     "plugins": [
         "react"
     ],
     "rules": {
-			"react/react-in-jsx-scope": "off",
-      "import/no-anonymous-default-export": "off"
+		"react/react-in-jsx-scope": "off",
+        "import/no-anonymous-default-export": "off"
       //"no-tabs": ["off", {"allowIndentationTabs": true}]
       //"no-confusing-arrow": ["warning", { "allowParens": false }]
     },

@@ -2,6 +2,7 @@
 
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+// @ts-ignore
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 
@@ -42,9 +43,6 @@ const config = {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
       },
-
-      // Add your rules for custom modules here
-      // Learn more about loaders from https://webpack.js.org/loaders/
     ],
   },
 };
@@ -55,9 +53,10 @@ module.exports = () => {
 
     config.plugins.push(new MiniCssExtractPlugin());
 
-    config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
-  } else {
-    config.mode = "development";
-  }
+  //   config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
+  // } else {
+  //   config.mode = "development";
+  // 
+}
   return config;
 };

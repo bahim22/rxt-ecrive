@@ -1,42 +1,80 @@
 {
-  "name": "my-webpack-project",
-  "version": "1.0.0",
-  "description": "My webpack project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "wp:build": "node_modules/.bin/wp",
-    "build": "webpack --mode=production --node-env=production",
-    "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
-    "watch": "webpack --watch",
-    "serve": "webpack serve"
-  },
-  "keywords": [
-    "webpack",
-    "babel",
-    "eslint",
-    "prettier",
-    "react"
-  ],
-  "author": "Hima Dionysus Balde",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/preset-env": "^7.16.11",
-    "@webpack-cli/generators": "^2.4.2",
-    "autoprefixer": "^10.4.4",
-    "babel-loader": "^8.2.4",
-    "css-loader": "^6.7.1",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.0",
-    "postcss": "^8.4.12",
-    "postcss-loader": "^6.2.1",
-    "prettier": "^2.6.2",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.8.1",
-    "workbox-webpack-plugin": "^6.5.1"
-  }
+    "name": "rxt-ecrive",
+    "version": "1.0.0",
+    "description": "Full stack react project",
+    "main": "index.js",
+    "scripts": {
+        "lint:pretest": "eslint \"src/**/*.{js,jsx}\"",
+        "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
+        "test:espretty": "npx eslint-config-prettier App.js",
+        "test:lint": "eslint \"src/**/*.{js,jsx}\"",
+        "test:webpack": "npx webpack --config webpack.dev.config.js",
+        "test:webpackpro": "npx webpack --config webpack.prod.config.js",
+        "prettier:check": "prettier --check \"src/**/*.{js,jsx}\"",
+        "prettier:write": "npx prettier --write \"src/**/*.{js,jsx}\"",
+        "wp:build": "node_modules/.bin/wp",
+        "build": "webpack --mode=production --node-env=production",
+        "build:dev": "webpack --mode=development",
+        "build:prod": "webpack --mode=production --node-env=production",
+        "watch": "webpack --watch",
+        "serve": "webpack serve"
+    },
+    "keywords": [
+        "webpack",
+        "babel",
+        "eslint",
+        "prettier",
+        "react"
+    ],
+    "author": "Hima Dionysus Balde",
+    "bugs": {
+        "url": "https://github.com/bahim22/react-portfo2/issues"
+    },
+    "homepage": "https://github.com/bahim22/react-portfo2#readme",
+    "license": "MIT",
+    "dependencies": {
+        "@headlessui/react": "^1.5.0",
+        "@heroicons/react": "^1.0.6",
+        "@tailwindcss/aspect-ratio": "^0.4.0",
+        "@tailwindcss/typography": "^0.5.2",
+        "axios": "^0.26.1",
+        "classnames": "^2.3.1",
+        "formik": "^2.2.9",
+        "node-sass": "^7.0.1",
+        "prop-types": "^15.8.0",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "react-query": "^3.35.0",
+        "react-router-dom": "^6.3.0",
+        "tailwindcss": "^3.0.23"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.17.9",
+        "@babel/preset-env": "^7.16.11",
+        "autoprefixer": "^10.4.4",
+        "babel-loader": "^8.2.4",
+        "css-loader": "^6.7.1",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.6.0",
+        "postcss": "^8.4.12",
+        "postcss-loader": "^6.2.1",
+        "prettier": "^2.6.2",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.72.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.8.1",
+        "workbox-webpack-plugin": "^6.5.1"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }
