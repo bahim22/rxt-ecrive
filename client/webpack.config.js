@@ -16,6 +16,7 @@ const config = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
+    filename: 'bundle.js'
   },
   devServer: {
     open: true,
@@ -23,7 +24,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: "public/index.html",
     }),
 
     // Add your plugins here
@@ -53,10 +54,10 @@ module.exports = () => {
 
     config.plugins.push(new MiniCssExtractPlugin());
 
-  //   config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
-  // } else {
-  //   config.mode = "development";
-  // 
+    config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
+  } else {
+    config.mode = "development";
+
 }
   return config;
 };
