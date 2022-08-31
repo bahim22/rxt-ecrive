@@ -12,6 +12,9 @@ module.exports = {
 		// the filename of the JS bundle will be bundle.js
 		filename: 'bundle.js', //path.join(_dirname, 'dist')
 	},
+    stats:{
+        errorDetails: true
+    },
 	devServer: {
 		port: 3222,
 		//watchContentBase: true,

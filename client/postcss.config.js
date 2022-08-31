@@ -3,7 +3,7 @@ module.exports = {
   // Learn more about it at https://github.com/webpack-contrib/postcss-loader#config-files
   plugins: [
       [
-      "autoprefixer", "tailwindcss"
+      "autoprefixer", "tailwindcss", "postcss-preset-env"
     ]
 ],
 };

@@ -9,7 +9,7 @@
         "test:espretty": "npx eslint-config-prettier App.js",
         "test:lint": "eslint \"src/**/*.{js,jsx}\"",
         "test:webpack": "npx webpack --config webpack.dev.config.js",
-        "test:webpackpro": "npx webpack --config webpack.prod.config.js",
+        "test:webpackpro": "webpack --config webpack.prod.config.js",
         "prettier:check": "prettier --check \"src/**/*.{js,jsx}\"",
         "prettier:write": "npx prettier --write \"src/**/*.{js,jsx}\"",
         "wp:build": "node_modules/.bin/wp",
@@ -17,7 +17,8 @@
         "build:dev": "webpack --mode=development",
         "build:prod": "webpack --mode=production --node-env=production",
         "watch": "webpack --watch",
-        "serve": "webpack serve"
+        "serve": "webpack serve",
+        "clean": "rm -rf dist/*"
     },
     "keywords": [
         "webpack",
@@ -28,11 +29,18 @@
     ],
     "author": "Hima Dionysus Balde",
     "bugs": {
-        "url": "https://github.com/bahim22/react-portfo2/issues"
+        "url": "https://github.com/bahim22/react-ecrive/issues"
     },
-    "homepage": "https://github.com/bahim22/react-portfo2#readme",
+    "homepage": "https://github.com/bahim22/react-ecrive#readme",
     "license": "MIT",
     "dependencies": {
+        "@emotion/react": "latest",
+        "@emotion/styled": "latest",
+        "@formspree/react": "^2.2.4",
+        "@mui/icons-material": "^5.6.1",
+        "@mui/material": "latest",
+        "@mui/styles": "^5.6.2",
+        "@mui/system": "latest",
         "@headlessui/react": "^1.5.0",
         "@heroicons/react": "^1.0.6",
         "@tailwindcss/aspect-ratio": "^0.4.0",
@@ -46,20 +54,31 @@
         "react-dom": "^18.0.0",
         "react-query": "^3.35.0",
         "react-router-dom": "^6.3.0",
-        "tailwindcss": "^3.0.23"
+        "tailwindcss": "^3.0.23",
+        "yup": "^0.32.11"
     },
     "devDependencies": {
         "@babel/core": "^7.17.9",
+        "@babel/preset-react": "^7.16.7",
         "@babel/preset-env": "^7.16.11",
         "autoprefixer": "^10.4.4",
         "babel-loader": "^8.2.4",
         "css-loader": "^6.7.1",
+        "eslint": "^8.11.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.29.3",
+        "file-loader": "^6.2.0",
+        "html-loader": "^3.1.0",
         "html-webpack-plugin": "^5.5.0",
         "mini-css-extract-plugin": "^2.6.0",
         "postcss": "^8.4.12",
         "postcss-loader": "^6.2.1",
+        "postcss-preset-env": "^7.4.2",
         "prettier": "^2.6.2",
         "style-loader": "^3.3.1",
+        "url-loader": "^4.1.1",
         "webpack": "^5.72.0",
         "webpack-cli": "^4.9.2",
         "webpack-dev-server": "^4.8.1",
@@ -68,8 +87,7 @@
     "browserslist": {
         "production": [
             ">0.2%",
-            "not dead",
-            "not op_mini all"
+            "not dead"
         ],
         "development": [
             "last 1 chrome version",

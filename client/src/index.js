@@ -1,18 +1,18 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import './index.css'
-import AppRouter from 'components/AppRouter';
+// import AppRouter from 'components/AppRouter';
 
-ReactDOM.render(
+/* ReactDOM.render(
     <React.StrictMode>
         <AppRouter />
     </React.StrictMode>,
     document.getElementById('root')
-)
+) */
 
-/* 
+/*
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.css';*/
 import App from './App';
 
 
@@ -21,4 +21,4 @@ root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-); */
+);
