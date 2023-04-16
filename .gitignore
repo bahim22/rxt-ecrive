@@ -9,12 +9,13 @@ lerna-debug.log*
 rxt-ecrive/pageServerW11/*
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-
+docs/*
+./docs/*
 /node_modules
 /.pnp
 .pnp.js
 
+./client/src/App.css
 # testing
 /coverage
 
@@ -147,3 +148,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+client/src/App.css

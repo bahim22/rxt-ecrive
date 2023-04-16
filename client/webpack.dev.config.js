@@ -63,9 +63,10 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			// template: path.resolve(__dirname, 'public', 'index.html'),
-			template: './public/index.html',
-			fileName: './index.html',
-      favicon: './public/favicon.ico',
+			// template: './public/index.html',
+			// fileName: './index.html',
+			template: 'public/index.html',
+            favicon: './public/favicon.ico',
 		}),
 	], // add a custom index.html as the template updated for this proj
 }
