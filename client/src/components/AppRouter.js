@@ -4,7 +4,7 @@ import NotFound from 'screens/NotFound'
 
 const Portfolio = lazy(() => import('screens/Portfolio'))
 
-function AppRouter() {
+export function AppRouter() {
     return (
         <BrowserRouter>
             <Suspense fallback={<NotFound />}>

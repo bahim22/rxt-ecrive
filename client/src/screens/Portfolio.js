@@ -1,16 +1,16 @@
 import { Suspense } from "react";
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
 import { Formik } from "formik";
-import styles from './Portfolio.module.scss'
-import stespsComposer from 'components/StepsRouter'
-import NotFound from "./NotFound";
+// import styles from './component.module.css'
+// import stespsComposer from 'components/StepsRouter'
+// import NotFound from "./NotFound";
 
 const initialFormValues = {
     portfolioName: ' ',
     marketplaces: {},
 }
 
-function Portfolio({ match: { url }}) {
+export function Portfolio({ match: { url }}) {
     return (
         <div>
             <Formik>
