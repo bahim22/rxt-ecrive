@@ -22,5 +22,3 @@ const Contact = () => {
 		xhr.send(data);
 	}
 }
-
-
